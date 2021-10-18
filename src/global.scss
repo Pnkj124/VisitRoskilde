@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,28 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* use custom font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+$font-family: "Poppins", "Gill Sans", "Gill Sans MT";
+$heading-color: #121212;
+$sub-heading-color: #6f7789;
+
+.container {
+    margin: 0 15px;
+}
+
+.heading {
+    font-family: $font-family;
+    font-weight: 800;
+    color: $heading-color;
+    margin-bottom: 0;
+}
+
+.sub-heading {
+    font-family: "Poppins", "Gill Sans", "Gill Sans MT";
+    font-weight: 500;
+    color: $sub-heading-color;
+    margin: 0;
+}
