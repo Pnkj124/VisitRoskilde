@@ -1,0 +1,113 @@
+{
+    "places": [
+        {
+            "id": 1,
+            "name": "Panorama Route",
+            "location": "Roskilde",
+            "shortDescription": "Walking in the beautiful glacial landscape",
+            "categoryId": 1,
+            "coverImage": "https://images.unsplash.com/photo-1614576211262-51619eedde99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+        },
+        {
+            "id": 1,
+            "name": "Hello 123",
+            "location": "Roskilde",
+            "shortDescription": "Walking in the beautiful glacial landscape",
+            "categoryId": 2,
+            "coverImage": "https://images.unsplash.com/photo-1601134917279-ef70a0a90f18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+        },
+        {
+            "id": 1,
+            "name": "another place",
+            "location": "Roskilde",
+            "shortDescription": "Walking in the beautiful glacial landscape",
+            "categoryId": 4,
+            "coverImage": "https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80"
+        },
+        {
+            "id": 1,
+            "name": "npm install swiper",
+            "location": "Roskilde",
+            "shortDescription": "hehhe glacial landscape",
+            "categoryId": 2,
+            "coverImage": "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+        },
+        {
+            "id": 1,
+            "name": "xyz museum",
+            "location": "Roskilde",
+            "shortDescription": "Walking in the beautiful glacial landscape",
+            "categoryId": 3,
+            "coverImage": "https://images.unsplash.com/photo-1601134917279-ef70a0a90f18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+        }
+    ],
+    "top-places": [
+        {
+            "id": 1,
+            "name": "Panorama Route",
+            "location": "Roskilde",
+            "shortDescription": "Walking in the beautiful glacial landscape",
+            "categoryId": 1,
+            "coverImage": "https://images.unsplash.com/photo-1614576211262-51619eedde99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+        },
+        {
+            "id": 1,
+            "name": "Hello 123",
+            "location": "Roskilde",
+            "shortDescription": "Walking in the beautiful glacial landscape",
+            "categoryId": 2,
+            "coverImage": "https://images.unsplash.com/photo-1601134917279-ef70a0a90f18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+        },
+        {
+            "id": 1,
+            "name": "another place",
+            "location": "Roskilde",
+            "shortDescription": "Walking in the beautiful glacial landscape",
+            "categoryId": 4,
+            "coverImage": "https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80"
+        },
+        {
+            "id": 1,
+            "name": "npm install swiper",
+            "location": "Roskilde",
+            "shortDescription": "hehhe glacial landscape",
+            "categoryId": 2,
+            "coverImage": "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+        },
+        {
+            "id": 1,
+            "name": "xyz museum",
+            "location": "Roskilde",
+            "shortDescription": "Walking in the beautiful glacial landscape",
+            "categoryId": 3,
+            "coverImage": "https://images.unsplash.com/photo-1601134917279-ef70a0a90f18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Art and Museum",
+            "coverImage": "https://images.unsplash.com/photo-1614576211262-51619eedde99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+        },
+        {
+            "id": 2,
+            "name": "Camping",
+            "coverImage": "https://images.unsplash.com/photo-1601134917279-ef70a0a90f18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+        },
+        {
+            "id": 3,
+            "name": "Forest and Nature",
+            "coverImage": "https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80"
+        },
+        {
+            "id": 4,
+            "name": "Lake",
+            "coverImage": "https://images.unsplash.com/photo-1583244685026-d8519b5e3d21?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+        },
+        {
+            "id": 5,
+            "name": "History",
+            "coverImage": "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+        }
+    ]
+}

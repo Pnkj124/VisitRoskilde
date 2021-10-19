@@ -1,3 +1,46 @@
-.my-custom-menu {
-    --width: 500px;
+$font-family: "Poppins", "Gill Sans", "Gill Sans MT";
+$heading-color: #121212;
+$sub-heading-color: #6f7789;
+
+.header,
+.top_places {
+    margin: 0 15px;
+}
+
+.heading {
+    font-family: $font-family;
+    font-weight: 800;
+    color: $heading-color;
+    margin-bottom: 0;
+}
+
+.sub-heading {
+    font-family: "Poppins", "Gill Sans", "Gill Sans MT";
+    font-weight: 500;
+    color: $sub-heading-color;
+    margin: 0;
+}
+
+.card__image {
+    padding: 1em;
+    border-radius: 1.6em;
+}
+
+.card__header {
+    margin-top: -24px;
+    font-size: 14px;
+    font-family: $font-family;
+    font-weight: bold;
+}
+
+.thumbnail_image {
+    border-radius: 0.6em;
+}
+
+.link {
+    text-decoration: none;
+    color: #6f7789;
+    font-size: 13px;
+    float: right;
+    justify-items: baseline;
 }

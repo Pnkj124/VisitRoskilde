@@ -1,27 +1,34 @@
-import { Component } from '@angular/core';
+import { AfterContentChecked, Component, OnInit, ViewChild } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { SwiperComponent } from 'swiper/angular';
+import { PlacesService } from '../api/places.service';
+import { Place } from '../Place';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements AfterContentChecked, OnInit{
 
-  constructor(private menu: MenuController) {
+  @ViewChild('swiper') swiper: SwiperComponent;
+
+  places: Place[] = [];
+  topPlaces: Place[] = [];
+
+  types: string[] = ['All','Popular','Nearby','Recommended'];
+
+  constructor(private menu: MenuController,private placeService: PlacesService) {
   }
-    openfirst(){
-      this.menu.enable(true,'first');
-      this.menu.open('first');
+  ngOnInit(): void {
+    this.placeService.getPlacesList().subscribe((places) => this.places = places);
+    this.placeService.getTopPlacesList().subscribe((places) => this.topPlaces = places);
+  }
+  ngAfterContentChecked(): void {
+    if(this.swiper)
+    {
+      this.swiper.updateSwiper({});
     }
-
-    openEnd(){
-      this.menu.open('end');
-    }
-
-    openCustom(){
-      this.menu.enable(true,'custom');
-      this.menu.open('custom');
-    }
+  }
 
 }

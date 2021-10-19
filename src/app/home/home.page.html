@@ -8,13 +8,50 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div class="container">
+  <div class="header">
     <h1 class="heading">Wonderful Roskilde</h1>
     <h3 class="sub-heading">Let’s Explore Together</h3>
 
-    <ion-chip>
-      <ion-label>Default</ion-label>
+    <ion-chip color="primary" *ngFor="let type of types">
+      <ion-label>{{type}}</ion-label>
     </ion-chip>
-
   </div>
+
+  <swiper #swiper>
+    <ng-template swiperSlide *ngFor="let place of places">
+      <ion-card>
+        <img [src]="place.coverImage" alt={{place.name}} class="card__image" />
+        <ion-card-header class="card__header">
+          <ion-card-title>{{place.name}}</ion-card-title>
+          <ion-card-subtitle>
+            <ion-icon name="location-sharp" color="primary"></ion-icon> {{place.location}}
+          </ion-card-subtitle>
+        </ion-card-header>
+        <!-- <ion-card-content>
+            {{place.shortDescription}}
+          </ion-card-content> -->
+      </ion-card>
+    </ng-template>
+  </swiper>
+
+  <section class="top_places">
+    <h1>Top Places
+      <small>
+        <a routerLink="/explore" class="link">View All</a>
+      </small>
+    </h1>
+    <ion-list *ngFor="let place of topPlaces">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img [src]="place.coverImage" alt="{{place.name}}" class="thumbnail_image">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>{{place.name}}</h2>
+          <h3>{{place.location}}</h3>
+          <p>{{place.shortDescription}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </section>
+
 </ion-content>
