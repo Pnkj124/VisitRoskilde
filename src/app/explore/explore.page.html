@@ -13,4 +13,18 @@
     <ion-searchbar placeholder="Search for Places"></ion-searchbar>
   </ion-toolbar>
 
+
+  <div class="header">
+    <h2>Categories</h2>
+  </div>
+
+  <swiper #swiper class="category">
+    <ng-template swiperSlide *ngFor="let category of categories">
+      <ion-avatar slot="start" class="center">
+        <img [src]="category.coverImage" alt={{category.name}} />
+      </ion-avatar>
+      <p class="text-center">{{category.name}}</p>
+    </ng-template>
+  </swiper>
+
 </ion-content>

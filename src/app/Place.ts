@@ -6,9 +6,3 @@ export interface Place {
     categoryId: number;
     location: string;
 }
-
-export interface Category{
-    id?: number;
-    name: string;
-    coverImage: string;
-}

@@ -1,0 +1,18 @@
+$font-family: "Poppins", "Gill Sans", "Gill Sans MT";
+
+.header,
+.category {
+    margin: 0 15px;
+}
+.center {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+p,
+h2 {
+    font-family: $font-family;
+}

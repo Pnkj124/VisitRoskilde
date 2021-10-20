@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import {Place} from '../Place';
+import { Category } from '../Category';
 
 const httpOptions = {
   header : new HttpHeaders({
@@ -25,6 +26,11 @@ export class PlacesService {
 
   getTopPlacesList(): Observable<Place[]> {
     return this.httpClient.get<Place[]>(this.baseUrl+'/top-places');
+  }
+
+
+  getCategoryList(): Observable<Category[]> {
+    return this.httpClient.get<Category[]>(this.baseUrl + '/categories');
   }
 }
 

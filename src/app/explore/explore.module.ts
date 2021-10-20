@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ExplorePageRoutingModule } from './explore-routing.module';
 
 import { ExplorePage } from './explore.page';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { ExplorePage } from './explore.page';
     FormsModule,
     IonicModule,
     ExplorePageRoutingModule,
+    SwiperModule
   ],
   declarations: [ExplorePage]
 })

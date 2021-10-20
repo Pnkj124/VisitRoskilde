@@ -17,7 +17,7 @@
     </ion-chip>
   </div>
 
-  <swiper #swiper>
+  <swiper #swiper effect="cube">
     <ng-template swiperSlide *ngFor="let place of places">
       <ion-card>
         <img [src]="place.coverImage" alt={{place.name}} class="card__image" />
