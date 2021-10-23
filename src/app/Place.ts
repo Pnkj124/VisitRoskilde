@@ -5,4 +5,5 @@ export interface Place {
     coverImage: string;
     categoryId: number;
     location: string;
+    isFavourite: boolean;
 }

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-back-outline" [routerLink]="'/home'"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" [name]="place.isFavourite ? 'heart' : 'heart-outline'" [class]="place.isFavourite ? 'favourite': ''"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <img [src]="place.coverImage" alt="{{place.name}}">
+  <ion-grid>
+    <ion-row class="detail_container">
+      <ion-col>
+        <ion-text>
+          <h1>{{place.name}}</h1>
+          <ion-chip color="success">
+            <ion-label>
+              <ion-icon name="location"></ion-icon>
+              {{place.location}}
+            </ion-label>
+          </ion-chip>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        {{place.shortDescription}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

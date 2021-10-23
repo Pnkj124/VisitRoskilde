@@ -8,6 +8,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
   <div class="header">
     <h1 class="heading">Wonderful Roskilde</h1>
     <h3 class="sub-heading">Let’s Explore Together</h3>
@@ -27,9 +30,6 @@
             <ion-icon name="location-sharp" color="primary"></ion-icon> {{place.location}}
           </ion-card-subtitle>
         </ion-card-header>
-        <!-- <ion-card-content>
-            {{place.shortDescription}}
-          </ion-card-content> -->
       </ion-card>
     </ng-template>
   </swiper>
@@ -41,7 +41,7 @@
       </small>
     </h1>
     <ion-list *ngFor="let place of topPlaces">
-      <ion-item>
+      <ion-item (click)="loadDetail(place)">
         <ion-thumbnail slot="start">
           <img [src]="place.coverImage" alt="{{place.name}}" class="thumbnail_image">
         </ion-thumbnail>

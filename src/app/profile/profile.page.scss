@@ -1,0 +1,18 @@
+*{
+  font-family: "Poppins", "Gill Sans", "Gill Sans MT", serif;
+}
+
+.profile__container{
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.profile__image__container{
+  justify-content: center;
+  display: flex;
+}
+.profile__image{
+  width: 10em;
+  transform: translateY(25%);
+}
+
