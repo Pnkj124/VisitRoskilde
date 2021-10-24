@@ -29,6 +29,7 @@
           <ion-card-subtitle>
             <ion-icon name="location-sharp" color="primary"></ion-icon> {{place.location}}
           </ion-card-subtitle>
+          <ngb-rating [max]="5" [(rate)]="place.rating" [readonly]="false"></ngb-rating>
         </ion-card-header>
       </ion-card>
     </ng-template>

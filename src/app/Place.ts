@@ -3,7 +3,9 @@ export interface Place {
     name: string;
     shortDescription: string;
     coverImage: string;
-    categoryId: number;
+    category: string[];
     location: string;
     isFavourite: boolean;
+    rating: number;
+    tags: string[];
 }

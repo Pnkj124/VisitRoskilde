@@ -9,6 +9,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HomePage } from './home.page';
 
 import {SwiperModule} from 'swiper/angular';
+import {NgbRatingModule} from "@ng-bootstrap/ng-bootstrap";
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import {SwiperModule} from 'swiper/angular';
     IonicModule,
     HomePageRoutingModule,
     SwiperModule,
+    NgbRatingModule
   ],
   declarations: [HomePage]
 })

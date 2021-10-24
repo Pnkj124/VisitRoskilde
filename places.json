@@ -5,7 +5,14 @@
       "name": "Panorama Route",
       "location": "Roskilde",
       "shortDescription": "Walking in the beautiful glacial landscape",
-      "categoryId": 1,
+      "category": [
+        "art-and-museum"
+      ],
+      "rating": 3,
+      "tags": [
+      "Recommended",
+      "Popular"
+      ],
       "coverImage": "https://images.unsplash.com/photo-1614576211262-51619eedde99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
       "isFavourite" : false
     },
@@ -14,7 +21,14 @@
       "name": "Hello 123",
       "location": "Roskilde",
       "shortDescription": "Walking in the beautiful glacial landscape",
-      "categoryId": 2,
+      "category": [
+        "camping"
+      ],
+      "rating": 2,
+      "tags": [
+        "Recommended",
+        "Nearby"
+      ],
       "coverImage": "https://images.unsplash.com/photo-1601134917279-ef70a0a90f18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
       "isFavourite" : true
     },
@@ -23,7 +37,13 @@
       "name": "another place",
       "location": "Roskilde",
       "shortDescription": "Walking in the beautiful glacial landscape",
-      "categoryId": 4,
+      "category": [
+        "lake"
+      ],
+      "rating": 4,
+      "tags": [
+        "Popular"
+      ],
       "coverImage": "https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80",
       "isFavourite" : false
     },
@@ -32,7 +52,13 @@
       "name": "npm install swiper",
       "location": "Roskilde",
       "shortDescription": "hehhe glacial landscape",
-      "categoryId": 2,
+      "category": [
+        "forest-and-nature"
+      ],
+      "rating": 1,
+      "tags": [
+        "Nearby"
+      ],
       "coverImage": "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
       "isFavourite" : false
     },
@@ -41,7 +67,15 @@
       "name": "xyz museum",
       "location": "Roskilde",
       "shortDescription": "Walking in the beautiful glacial landscape",
-      "categoryId": 3,
+      "category": [
+        "museum"
+      ],
+      "rating": 5,
+      "tags": [
+        "Recommended",
+        "Popular",
+        "Nearby"
+      ],
       "coverImage": "https://images.unsplash.com/photo-1601134917279-ef70a0a90f18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
       "isFavourite" : false
     }
@@ -49,28 +83,38 @@
   "categories": [
     {
       "id": 1,
-      "name": "Art and Museum",
+      "title": "Art and Museum",
+      "code": "art-and-museum",
       "coverImage": "https://images.unsplash.com/photo-1614576211262-51619eedde99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
     },
     {
       "id": 2,
-      "name": "Camping",
+      "title": "Camping",
+      "code": "camping",
       "coverImage": "https://images.unsplash.com/photo-1601134917279-ef70a0a90f18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
     },
     {
       "id": 3,
-      "name": "Forest and Nature",
+      "title": "Forest and Nature",
+      "code": "forest-and-nature",
       "coverImage": "https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80"
     },
     {
       "id": 4,
-      "name": "Lake",
+      "title": "Lake",
+      "code": "lake",
       "coverImage": "https://images.unsplash.com/photo-1583244685026-d8519b5e3d21?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
     },
     {
       "id": 5,
-      "name": "History",
+      "title": "History",
+      "code": "history",
       "coverImage": "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
     }
+  ],
+  "tags": [
+      "Recommended",
+      "Popular",
+      "Nearby"
   ]
 }
