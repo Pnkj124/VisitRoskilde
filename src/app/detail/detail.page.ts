@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import {Place} from "../Place";
 import {PlacesService} from "../api/places.service";
 import {ActivatedRoute, Router} from "@angular/router";
@@ -20,7 +20,11 @@ export class DetailPage {
       if (navParams) this.place = navParams.place;
     })
 
-   // this.placeService.getPlaceById(this.placeId).subscribe(place => this.place = place);
+  }
+
+  toggleFavourite(place: Place){
+    place.isFavourite = !place.isFavourite
+    this.placeService.toggleFavourite(place).subscribe();
   }
 
 
