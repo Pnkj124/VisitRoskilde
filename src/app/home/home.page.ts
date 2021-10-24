@@ -18,7 +18,7 @@ export class HomePage implements AfterContentChecked, OnInit{
   places: Place[] = [];
   topPlaces: Place[] = [];
 
-  types: string[] = ['All','Popular','Nearby','Recommended'];
+  tags: string[] = [];
 
   constructor(private menu: MenuController,private placeService: PlacesService,private  alertController : AlertController,private router: Router,private navController: NavController) {
   }
@@ -43,6 +43,7 @@ export class HomePage implements AfterContentChecked, OnInit{
   private loadPlaces() : void{
     this.placeService.getPlacesList().subscribe((places) => this.places = places);
     this.placeService.getTopPlacesList().subscribe((places) => this.topPlaces = places);
+    this.placeService.getTags().subscribe((tags) => this.tags = tags);
   }
 
   async loadDetail(place: Place){

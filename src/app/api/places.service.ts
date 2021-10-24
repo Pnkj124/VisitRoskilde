@@ -38,5 +38,10 @@ export class PlacesService {
     const url = `${this.baseUrl}/places/${place.id}`;
     return this.httpClient.put<Place>(url, place, httpOptions)
   }
+
+  getTags(): Observable<string[]> {
+    const url = `${this.baseUrl}/tags`;
+    return this.httpClient.get<string[]>(url);
+  }
 }
 
