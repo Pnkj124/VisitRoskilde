@@ -30,6 +30,11 @@ export class PlacesService {
       .pipe(map((response: any) => response.filter((x: Place) => x.rating > 3)));
   }
 
+  getFavouritePlacesList(): Observable<Place[]> {
+    return this.httpClient.get<Place[]>(this.baseUrl + '/places')
+      .pipe(map((response: any) => response.filter((x: Place) => x.isFavourite)));
+  }
+
   getCategoryList(): Observable<Category[]> {
     return this.httpClient.get<Category[]>(this.baseUrl + '/categories');
   }

@@ -8,4 +8,24 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <section class="top_places">
+    <ion-list *ngFor="let place of favouritePlaces">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img [src]="place.coverImage" alt="{{place.name}}" class="thumbnail_image">
+        </ion-thumbnail>
+        <ion-label>
+          <h2 (click)="loadDetail(place)"><strong>{{place.name}}</strong></h2>
+          <h3>{{place.location}}</h3>
+          <p>{{place.shortDescription}}</p>
+        </ion-label>
+        <ion-button color="danger" (click)="removeFromFavourite(place)">
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </section>
 </ion-content>
