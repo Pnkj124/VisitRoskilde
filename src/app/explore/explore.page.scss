@@ -1,9 +1,5 @@
 $font-family: "Poppins", "Gill Sans", "Gill Sans MT";
 
-.header,
-.category {
-    margin: 0 15px;
-}
 .center {
     margin: 0 auto;
 }
@@ -11,8 +7,8 @@ $font-family: "Poppins", "Gill Sans", "Gill Sans MT";
 .text-center {
     text-align: center;
 }
-
 p,
-h2 {
+h2 ,
+ion-searchbar{
     font-family: $font-family;
 }

@@ -1,8 +1,5 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button autoHide="false"></ion-menu-button>
-    </ion-buttons>
     <ion-title>Favourite</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -11,16 +8,18 @@
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-  <section class="top_places">
+  <section class="favourite__places">
     <ion-list *ngFor="let place of favouritePlaces">
       <ion-item>
         <ion-thumbnail slot="start">
           <img [src]="place.coverImage" alt="{{place.name}}" class="thumbnail_image">
         </ion-thumbnail>
         <ion-label>
-          <h2 (click)="loadDetail(place)"><strong>{{place.name}}</strong></h2>
-          <h3>{{place.location}}</h3>
-          <p>{{place.shortDescription}}</p>
+          <ion-title (click)="loadDetail(place)">{{place.name}}</ion-title>
+          <ion-chip color="success">
+            <ion-label> <ion-icon name="location"></ion-icon> {{place.location}}</ion-label>
+          </ion-chip>
+          <ion-title size="small">{{place.shortDescription}}</ion-title>
         </ion-label>
         <ion-button color="danger" (click)="removeFromFavourite(place)">
           <ion-icon name="trash"></ion-icon>

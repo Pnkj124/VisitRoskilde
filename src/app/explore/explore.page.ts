@@ -2,6 +2,8 @@ import { AfterContentChecked, Component, OnInit, ViewChild } from '@angular/core
 import { SwiperComponent } from 'swiper/angular';
 import { PlacesService } from '../api/places.service';
 import { Category } from '../Category';
+import {Place} from "../Place";
+import {NavController} from "@ionic/angular";
 
 @Component({
   selector: 'app-explore',
@@ -14,10 +16,14 @@ export class ExplorePage implements AfterContentChecked, OnInit {
 
   categories: Category[] = [];
 
-  constructor(private placeService: PlacesService) { }
+  recommendedPlaces: Place[] = [];
+
+  constructor(private placeService: PlacesService,private navController: NavController) { }
 
   ngOnInit() {
     this.placeService.getCategoryList().subscribe((category) => this.categories = category);
+    this.placeService.getRecommendedPlaces().subscribe((places) => this.recommendedPlaces = places);
+    console.log(this.recommendedPlaces);
   }
 
   ngAfterContentChecked(): void {
@@ -30,6 +36,10 @@ export class ExplorePage implements AfterContentChecked, OnInit {
         scrollbar: { draggable: true },
       });
     }
+  }
+
+  async loadDetail(place: Place){
+    await this.navController.navigateForward(`detail/${place.id}`, { state: { place } })
   }
 
 }

@@ -2,32 +2,25 @@ $font-family: "Poppins", "Gill Sans", "Gill Sans MT";
 $heading-color: #121212;
 $sub-heading-color: #6f7789;
 
-.header,
-.top_places {
-    margin: 0 15px;
+.top_places ion-title {
+    font-family: $font-family;
+    padding: 0;
 }
 
 .heading {
     font-family: $font-family;
     font-weight: 800;
-    color: $heading-color;
-    margin-bottom: 0;
-}
-
-.sub-heading {
-    font-family: "Poppins", "Gill Sans", "Gill Sans MT";
-    font-weight: 500;
-    color: $sub-heading-color;
     margin: 0;
 }
 
-.card__image {
-    padding: 1em;
-    border-radius: 1.6em;
+.sub-heading {
+    font-family: $font-family;
+    font-weight: 500;
+    margin-top: -10px;
 }
 
+
 .card__header {
-    margin-top: -24px;
     font-size: 14px;
     font-family: $font-family;
     font-weight: bold;

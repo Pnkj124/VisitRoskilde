@@ -1,8 +1,5 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button autoHide="false"></ion-menu-button>
-    </ion-buttons>
     <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -11,48 +8,66 @@
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-  <div class="header">
-    <h1 class="heading">Wonderful Roskilde</h1>
-    <h3 class="sub-heading">Let’s Explore Together</h3>
 
-    <ion-chip color="primary" *ngFor="let tag of tags">
-      <ion-label>{{tag}}</ion-label>
-    </ion-chip>
-  </div>
-
-  <swiper #swiper effect="cube">
-    <ng-template swiperSlide *ngFor="let place of places">
-      <ion-card (click)="loadDetail(place)">
-        <img [src]="place.coverImage" alt={{place.name}} class="card__image" />
-        <ion-card-header class="card__header">
-          <ion-card-title>{{place.name}}</ion-card-title>
-          <ion-card-subtitle>
-            <ion-icon name="location-sharp" color="primary"></ion-icon> {{place.location}}
-          </ion-card-subtitle>
-          <ngb-rating [max]="5" [(rate)]="place.rating" [readonly]="true"></ngb-rating>
-        </ion-card-header>
-      </ion-card>
-    </ng-template>
-  </swiper>
-
-  <section class="top_places">
-    <h1>Top Places
-      <small>
-        <a routerLink="/explore" class="link">View All</a>
-      </small>
-    </h1>
-    <ion-list *ngFor="let place of topPlaces">
-      <ion-item (click)="loadDetail(place)">
-        <ion-thumbnail slot="start">
-          <img [src]="place.coverImage" alt="{{place.name}}" class="thumbnail_image">
-        </ion-thumbnail>
-        <ion-label>
-          <h2>{{place.name}}</h2>
-          <h3>{{place.location}}</h3>
-          <p>{{place.shortDescription}}</p>
-        </ion-label>
-      </ion-item>
-    </ion-list>
-  </section>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-title size="large" color="dark" class="heading">Wonderful Roskilde</ion-title>
+        <ion-title size="small" color="medium" class="sub-heading">Let’s Explore Together</ion-title>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-chip color="primary" *ngFor="let tag of tags">
+          <ion-label>{{tag}}</ion-label>
+        </ion-chip>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <swiper #swiper>
+          <ng-template swiperSlide *ngFor="let place of places">
+            <ion-card (click)="loadDetail(place)">
+              <img [src]="place.coverImage" alt={{place.name}} class="card__image" />
+              <ion-card-header class="card__header">
+                <ion-card-title>{{place.name}}</ion-card-title>
+                <ion-card-subtitle>
+                  <ion-icon name="location-sharp" color="primary"></ion-icon> {{place.location}}
+                </ion-card-subtitle>
+                <ngb-rating [max]="5" [(rate)]="place.rating" [readonly]="true"></ngb-rating>
+              </ion-card-header>
+            </ion-card>
+          </ng-template>
+        </swiper>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+     <ion-col>
+       <ion-title>Top Places
+         <small>
+           <a routerLink="/explore" class="link">View All</a>
+         </small>
+       </ion-title>
+     </ion-col>
+    </ion-row>
+    <ion-row class="top_places">
+      <ion-col>
+        <ion-list *ngFor="let place of topPlaces">
+          <ion-item (click)="loadDetail(place)">
+            <ion-thumbnail slot="start">
+              <img [src]="place.coverImage" alt="{{place.name}}" class="thumbnail_image">
+            </ion-thumbnail>
+            <ion-label>
+              <ion-title>{{place.name}}</ion-title>
+              <ion-title size="small">{{place.location}}</ion-title>
+              <p>{{place.shortDescription}}</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
