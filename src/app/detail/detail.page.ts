@@ -10,7 +10,6 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class DetailPage {
 
-  placeId: number;
   place: Place;
 
   constructor(private placeService: PlacesService,private route: ActivatedRoute, private router: Router) {
@@ -24,7 +23,7 @@ export class DetailPage {
 
   toggleFavourite(place: Place){
     place.isFavourite = !place.isFavourite
-    this.placeService.toggleFavourite(place).subscribe();
+    this.placeService.toggleFavourite(place).subscribe((place) => this.place = place);
   }
 
 

@@ -22,8 +22,8 @@
   <ion-row>
     <ion-col>
       <swiper #swiper>
-        <ng-template swiperSlide *ngFor="let category of categories">
-          <ion-avatar slot="start" class="center">
+        <ng-template  swiperSlide *ngFor="let category of categories">
+          <ion-avatar slot="start" class="center" (click)="searchByCategory(category)">
             <img [src]="category.coverImage" alt={{category.name}} />
           </ion-avatar>
           <p class="text-center">{{category.title}}</p>

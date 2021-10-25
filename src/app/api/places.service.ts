@@ -40,6 +40,11 @@ export class PlacesService {
       .pipe(map((response: any) => response.filter((x: Place) => x.tags.includes("Recommended"))));
   }
 
+  getPlacesByCategory(category: string): Observable<Place[]> {
+    return this.httpClient.get<Place[]>(this.baseUrl + '/places')
+      .pipe(map((response: any) => response.filter((x: Place) => x.category.includes(category))));
+  }
+
   getCategoryList(): Observable<Category[]> {
     return this.httpClient.get<Category[]>(this.baseUrl + '/categories');
   }

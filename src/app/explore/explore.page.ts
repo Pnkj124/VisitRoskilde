@@ -42,4 +42,8 @@ export class ExplorePage implements AfterContentChecked, OnInit {
     await this.navController.navigateForward(`detail/${place.id}`, { state: { place } })
   }
 
+  async searchByCategory(category: Category){
+    await this.navController.navigateForward(`search/${category.code}`,{ state:{category}})
+  }
+
 }

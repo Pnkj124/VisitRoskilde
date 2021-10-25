@@ -9,7 +9,7 @@ const routes: Routes = [
     component: DetailPage
   },
   {
-    path: ':id',
+    path: ':any',
     component: DetailPage
   }
 ];
