@@ -1,5 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
-import * as L from 'Leaflet';
+import * as L from 'leaflet';
 import {MapMarkerService} from "../api/map-marker.service";
 
 
