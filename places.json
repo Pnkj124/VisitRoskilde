@@ -112,7 +112,7 @@
           "url": "https://jimswbckxyazqwvjqsdg.supabase.in/storage/v1/object/sign/roskilde-places/Svogerslev/IMG_2094.JPG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyb3NraWxkZS1wbGFjZXMvU3ZvZ2Vyc2xldi9JTUdfMjA5NC5KUEciLCJpYXQiOjE2MzU0NDE3NjAsImV4cCI6MTk1MDgwMTc2MH0.GebiDXkD92DJVjAipDhL02K61ME1z4ggYUn2CshZgVA"
         }
       ],
-      "isFavourite": false,
+      "isFavourite": true,
       "geometry": {
         "type": "Point",
         "coordinates": [
