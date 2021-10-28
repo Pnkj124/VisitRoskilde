@@ -12,17 +12,19 @@ import {SwiperModule} from 'swiper/angular';
 import {NgbRatingModule} from "@ng-bootstrap/ng-bootstrap";
 import {CardComponent} from "../components/card/card.component";
 import {SmallCardComponent} from "../components/small-card/small-card.component";
+import {DetailPageModule} from "../detail/detail.module";
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    HomePageRoutingModule,
-    SwiperModule,
-    NgbRatingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        HomePageRoutingModule,
+        SwiperModule,
+        NgbRatingModule,
+        DetailPageModule
+    ],
   exports: [
     SmallCardComponent
   ],

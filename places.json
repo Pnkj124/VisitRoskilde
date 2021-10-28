@@ -71,7 +71,7 @@
           "url": "https://jimswbckxyazqwvjqsdg.supabase.in/storage/v1/object/sign/roskilde-places/roskilde-cathedral/478.JPG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyb3NraWxkZS1wbGFjZXMvcm9za2lsZGUtY2F0aGVkcmFsLzQ3OC5KUEciLCJpYXQiOjE2MzU0NDE1NjMsImV4cCI6MTk1MDgwMTU2M30.KGuAmDqcgs3jyhPo7thEP5OhgFXq5p1-ii9zHobq1g0"
         }
       ],
-      "isFavourite": false,
+      "isFavourite": true,
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -132,7 +132,8 @@
       ],
       "rating": 1,
       "tags": [
-        "Nearby"
+        "Nearby",
+        "Recommended"
       ],
       "coverImage": "https://jimswbckxyazqwvjqsdg.supabase.in/storage/v1/object/sign/roskilde-places/folkeparken/Folkeparken.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyb3NraWxkZS1wbGFjZXMvZm9sa2VwYXJrZW4vRm9sa2VwYXJrZW4uanBnIiwiaWF0IjoxNjM1NDQxOTQ5LCJleHAiOjE5NTA4MDE5NDl9.Cv8Go2QTfcldhGI74KRVWPjgxb7xOKh5MOoRH8K7BdY",
       "images": [
@@ -149,7 +150,7 @@
           "url": "https://jimswbckxyazqwvjqsdg.supabase.in/storage/v1/object/sign/roskilde-places/folkeparken/2019-05-16.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyb3NraWxkZS1wbGFjZXMvZm9sa2VwYXJrZW4vMjAxOS0wNS0xNi5qcGciLCJpYXQiOjE2MzU0NDE5NDYsImV4cCI6MTk1MDgwMTk0Nn0.5vFZiGSX6oLuOmgsrw0n7UZkeOROHcz5zFEjGD8s7pA"
         }
       ],
-      "isFavourite": false,
+      "isFavourite": true,
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -201,14 +202,15 @@
       "id": 6,
       "name": "Viking Ship Museum",
       "location": "Roskilde",
-      "shortDescription":"The Viking Ship Museum is now closed for rebuilding.",
+      "shortDescription": "The Viking Ship Museum is now closed for rebuilding.",
       "description": "The Viking Ship Museum is now closed for rebuilding. After 95 years in operation, the Viking Ship Museum closes its doors - and will re-emerge anew in five years as the Museum of the Viking Age.\n\nEver since the museum opened in 1926, the Viking Ship Museum has been a national symbol and gathering place for Norway's most important cultural heritage. For almost 100 years, the ship graves from Oseberg, Gokstad and Tune and Borre have captivated visitors from all over the world.\n\nIt is crucial to build a new museum to secure the cultural heritage for future generations. The new museum will ensure optimal conditions for the objects and at the same time give the public a unique encounter with the Viking Age.",
       "category": [
         "art-and-museum"
       ],
       "rating": 4,
       "tags": [
-        "Popular"
+        "Popular",
+        "Recommended"
       ],
       "coverImage": "https://jimswbckxyazqwvjqsdg.supabase.in/storage/v1/object/sign/roskilde-places/vikingmuseum/IMG_20210911_120141.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyb3NraWxkZS1wbGFjZXMvdmlraW5nbXVzZXVtL0lNR18yMDIxMDkxMV8xMjAxNDEuanBnIiwiaWF0IjoxNjM1NDUxNzIwLCJleHAiOjE5NTA4MTE3MjB9.g7awbkBicHF-6rXk1xe2ZvhAE8myyLUhLe90UzUBV9k",
       "images": [
@@ -241,7 +243,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          55.65088515055106, 12.081484794616701
+          55.65088515055106,
+          12.081484794616701
         ]
       }
     }

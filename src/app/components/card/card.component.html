@@ -1,4 +1,5 @@
 <ion-card (click)="loadDetail(place)">
+  <app-favourite-status (toggleFavouriteStatus)="toggleFavourite(place,$event)" [place]="place"></app-favourite-status>
   <img [src]="place.coverImage" alt={{place.name}} class="image__fit" />
   <ion-card-header class="card__header">
     <ion-card-title>{{place.name}}</ion-card-title>

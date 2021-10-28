@@ -8,15 +8,19 @@ import { DetailPageRoutingModule } from './detail-routing.module';
 
 import { DetailPage } from './detail.page';
 import {NgbRatingModule} from "@ng-bootstrap/ng-bootstrap";
+import {FavouriteStatusComponent} from "../components/favourite-status/favourite-status.component";
 
 @NgModule({
-    imports: [
-        CommonModule,
-        FormsModule,
-        IonicModule,
-        DetailPageRoutingModule,
-        NgbRatingModule
-    ],
-  declarations: [DetailPage]
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    DetailPageRoutingModule,
+    NgbRatingModule
+  ],
+  exports: [
+    FavouriteStatusComponent
+  ],
+  declarations: [DetailPage, FavouriteStatusComponent]
 })
 export class DetailPageModule {}

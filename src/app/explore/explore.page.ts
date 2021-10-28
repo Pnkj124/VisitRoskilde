@@ -21,9 +21,7 @@ export class ExplorePage implements AfterContentChecked, OnInit {
   constructor(private placeService: PlacesService,private navController: NavController) { }
 
   ngOnInit() {
-    this.placeService.getCategoryList().subscribe((category) => this.categories = category);
-    this.placeService.getRecommendedPlaces().subscribe((places) => this.recommendedPlaces = places);
-    console.log(this.recommendedPlaces);
+    this.loadData();
   }
 
   ngAfterContentChecked(): void {
@@ -33,6 +31,19 @@ export class ExplorePage implements AfterContentChecked, OnInit {
         spaceBetween: 5,
       });
     }
+  }
+
+  doRefresh(event) : void {
+    this.loadData();
+    setTimeout(() => {
+      console.log('Loading of the places list is finished.');
+      event.target.complete();
+    }, 2000);
+  }
+
+  loadData(){
+    this.placeService.getCategoryList().subscribe((category) => this.categories = category);
+    this.placeService.getRecommendedPlaces().subscribe((places) => this.recommendedPlaces = places);
   }
 
   async loadDetail(place: Place){

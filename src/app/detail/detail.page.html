@@ -4,8 +4,8 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-buttons slot="primary">
-      <ion-button (click)="toggleFavourite(place)">
-        <ion-icon slot="icon-only" [name]="place.isFavourite ? 'heart' : 'heart-outline'" [class]="place.isFavourite ? 'favourite': ''"></ion-icon>
+      <ion-button >
+        <app-favourite-status (toggleFavouriteStatus)="toggleFavourite(place)" [place]="place"></app-favourite-status>
       </ion-button>
     </ion-buttons>
     <ion-title>{{place.name}}</ion-title>
