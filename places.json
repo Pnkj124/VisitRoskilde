@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Roskilde Museum",
       "location": "Roskilde",
-      "shortDescription": "Walking in the beautiful glacial landscape",
+      "shortDescription": "Roskilde Museum is a local history museum based in Roskilde, Denmark",
       "description": "Roskilde Museum is a local history museum based in Roskilde, Denmark. The museum, which is run by the municipalities of Roskilde, Frederikssund and Lejre, has eight separate branches. The main branch in Roskilde, on the corner of Sankt Olsgade and Sankt Olsstræde, is based in two listed buildings, the Sugar House and the Liebe House, a former sugar refinery and a former merchant's house respectively.",
       "category": [
         "art-and-museum"
@@ -29,7 +29,7 @@
           "url": "https://lh5.googleusercontent.com/p/AF1QipPkFb9_tFDrWmnXPwZkcw1E85OOCXlIS0qfOe20=s406-k-no"
         }
       ],
-      "isFavourite": true,
+      "isFavourite": false,
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -71,7 +71,7 @@
           "url": "https://lh5.googleusercontent.com/p/AF1QipMx3C_tRHV276m7SP1kdR2Jt5XhRJnghLbRW4Zy=s677-k-no"
         }
       ],
-      "isFavourite": false,
+      "isFavourite": true,
       "geometry": {
         "type": "Point",
         "coordinates": [

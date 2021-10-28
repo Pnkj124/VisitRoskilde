@@ -34,11 +34,7 @@ favouritePlaces: Place[] = [];
 
   removeFromFavourite(place: Place)
   {
-    place.isFavourite = false;
-    this.placeService.toggleFavourite(place).subscribe( () =>
-      this.favouritePlaces = this.favouritePlaces
-      .filter((filter => filter.isFavourite))
-      );
+    this.placeService.toggleFavourite(place.id,false);
   }
 
   async loadDetail(place: Place)

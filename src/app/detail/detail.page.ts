@@ -23,7 +23,7 @@ export class DetailPage {
 
   toggleFavourite(place: Place){
     place.isFavourite = !place.isFavourite
-    this.placeService.toggleFavourite(place).subscribe((place) => this.place = place);
+    this.placeService.toggleFavourite(place.id,place.isFavourite);
   }
 
 
