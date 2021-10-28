@@ -2,9 +2,10 @@
   "places": [
     {
       "id": 1,
-      "name": "Panorama Route",
+      "name": "Roskilde Museum",
       "location": "Roskilde",
       "shortDescription": "Walking in the beautiful glacial landscape",
+      "description": "Roskilde Museum is a local history museum based in Roskilde, Denmark. The museum, which is run by the municipalities of Roskilde, Frederikssund and Lejre, has eight separate branches. The main branch in Roskilde, on the corner of Sankt Olsgade and Sankt Olsstræde, is based in two listed buildings, the Sugar House and the Liebe House, a former sugar refinery and a former merchant's house respectively.",
       "category": [
         "art-and-museum"
       ],
@@ -13,31 +14,78 @@
         "Recommended",
         "Popular"
       ],
-      "coverImage": "https://images.unsplash.com/photo-1614576211262-51619eedde99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
-      "isFavourite": true
+      "coverImage": "https://lh5.googleusercontent.com/p/AF1QipPJaeK5taobk_ja9ZLfpOH8hCEGTiEn7ccZbJrP=w700-h400-k-no",
+      "images": [
+        {
+          "caption": "Roskilde Museum",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipORlKEUoamLeiGerm7xye0HeBjC25x8xpVVPPYH=w700-h400-k-no"
+        },
+        {
+          "caption": "Roskilde Museum",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipOJNdal1o-sqHP3TPxlpqh23pEtBnDPwlU0_7DC=w700-h400-k-no"
+        },
+        {
+          "caption": "Roskilde Museum",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipPkFb9_tFDrWmnXPwZkcw1E85OOCXlIS0qfOe20=s406-k-no"
+        }
+      ],
+      "isFavourite": true,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.64149,
+          12.08042
+        ]
+      }
     },
     {
       "id": 2,
-      "name": "Hello 123",
+      "name": "Roskilde Cathedral",
       "location": "Roskilde",
       "shortDescription": "Walking in the beautiful glacial landscape",
+      "description": "Roskilde Cathedral (Danish: Roskilde Domkirke), in the city of Roskilde on the island of Zealand (Sjælland) in eastern Denmark, is a cathedral of the Lutheran Church of Denmark.\n\nThe cathedral is the most important church in Denmark, the official royal burial church of the Danish monarchs, and a UNESCO World Heritage Site. This is due to two criteria: the architecture of the cathedral shows 800 years of European architectural styles, and it is one of the earliest examples in Scandinavia of a Gothic cathedral to be built in brick; it encouraged the spread of the Brick Gothic style throughout Northern Europe. Constructed during the 12th and 13th centuries, the cathedral incorporates both Gothic and Romanesque architectural features in its design. The cathedral has been the main burial site for Danish monarchs since the 15th century. As such, it has been significantly extended and altered over the centuries to accommodate a considerable number of burial chapels and the many added chapels show different architectural styles.",
       "category": [
-        "camping",
-        "forest-and-nature"
+        "art-and-museum"
       ],
       "rating": 2,
       "tags": [
         "Recommended",
         "Nearby"
       ],
-      "coverImage": "https://images.unsplash.com/photo-1601134917279-ef70a0a90f18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
-      "isFavourite": false
+      "coverImage": "https://lh5.googleusercontent.com/p/AF1QipPy-QqnBtVUJWwJbHQc63j1HhW2K78y7cLL13I=w700-h400-k-no",
+      "images": [
+        {
+          "caption": "Roskilde Cathedral",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipOeGBZlKhd1l4MoSr7dcKdkdB_rMApKHICPhMcz=s387-k-no"
+        },
+        {
+          "caption": "Roskilde Cathedral",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipNFSqcCCACIChO3ga_cBh_cqs7WKh_kPuf_TD9y=s451-k-no"
+        },
+        {
+          "caption": "Roskilde Cathedral",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipMMXxRr5eb7hC298-dfnViVGGeSydABTzlBZGzt=s508-k-no"
+        },
+        {
+          "caption": "Roskilde Cathedral",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipMx3C_tRHV276m7SP1kdR2Jt5XhRJnghLbRW4Zy=s677-k-no"
+        }
+      ],
+      "isFavourite": false,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.641491,
+          12.08042
+        ]
+      }
     },
     {
       "id": 3,
-      "name": "another place",
+      "name": "Svogerslev Sø",
       "location": "Roskilde",
-      "shortDescription": "Walking in the beautiful glacial landscape",
+      "shortDescription": "A Beautiful Lake in Roskilde",
+      "description": "",
       "category": [
         "lake"
       ],
@@ -45,14 +93,40 @@
       "tags": [
         "Popular"
       ],
-      "coverImage": "https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80",
-      "isFavourite": true
+      "coverImage": "https://lh5.googleusercontent.com/p/AF1QipNDBnk0jCMo42NlQJckAJDi5BKkaEjQYFDx3cEh=w700-h400-k-no",
+      "images": [
+        {
+          "caption": "Svogerslev Sø",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipMZSn9GdCO5224aNzmb2SG3zi5P7SwjsY6hCTxd=w700-h400-k-no"
+        },
+        {
+          "caption": "Svogerslev Sø",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipMGM9NszIJMPWDCACj7RwOHOuVxUGzH4IHvJDRX=w700-h400-k-no"
+        },
+        {
+          "caption": "Svogerslev Sø",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipPxfUeeBwOgkVTKa4xXVNeakkwAr-9fQOjh9SM4=w700-h400-k-no"
+        },
+        {
+          "caption": "Svogerslev Sø",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipPl1rzNFOgQpD64OR2Zb7cnT2LAQR1MmCR7X3R1=w700-h400-k-no"
+        }
+      ],
+      "isFavourite": true,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.642414650000006,
+          12.003508503149625
+        ]
+      }
     },
     {
       "id": 4,
-      "name": "npm install swiper",
+      "name": "Folkeparken, Roskilde",
       "location": "Roskilde",
       "shortDescription": "hehhe glacial landscape",
+      "description": "The area was originally used for grazing by Roskilde Convent. With holdings of almost 1,000 hectares of land, the convent was one of the largest land owners in Roskilde. The convent's farm, Ladegården, was located to the rear of the convent, where Roskilde Library stands today.[1]\n\nIn 1819, the Convent established a three hectares park on part of their land. The park contained a number of artificial lakes which had been created as fishing ponds since the 18th century. It was created for the nuns but was also open to other citizens. It was the largest park with public access in Roskilde at the time. The only exception was Møstingholm, a small peninsula on one of the lakes, which featured a pavilion where the residents of the convent often had their afternoon tea. Møstingsholm was named after Christiane Møsting, the prioress of the convent from 1797 until 1820.[2]\n\nIn 1904, Roskilde Convent decided to almost double the size of their park. Completed in 1906, the new section was designed by E. Galschiøtt and restored several of the old fishing ponds which had dried out over the years. It was named Berte-Margrethe Anlægget (\"The Berthe-Margrethe Complex\") in memory of Berthe Skeel and Margrethe Ulfeld, the two founders of the convent.\n\nBetween 1908 and 1923, the city purchased approximately 50 ha of land from the convent with the intention of selling it off in lots for redevelopment with private houses. In 1934, the City Council decided to establish Folkeparken on part of the land. The new park was designed by the landscape architect Carl Theodor Sørensen. In 1950, Roskilde Municipality purchased Klostermarken and Berte Margrete Anlægget from the convent.",
       "category": [
         "forest-and-nature"
       ],
@@ -60,16 +134,42 @@
       "tags": [
         "Nearby"
       ],
-      "coverImage": "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
-      "isFavourite": false
+      "coverImage": "https://lh5.googleusercontent.com/p/AF1QipNlbBus5WV2Ly7Mk3AztHMOsu4jOLYrkTfDSAA0=s700-k-no",
+      "images": [
+        {
+          "caption": "Folkeparken, Roskilde",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipNxJtDSpwXMr8pjU434MFG0xjnB7GLsOAjQ9as4=s508-k-no"
+        },
+        {
+          "caption": "Folkeparken, Roskilde",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipOAwBGO5lQo0L01J-7N8YKGcDAZ05x_BS1Le-9J=s454-k-no"
+        },
+        {
+          "caption": "Folkeparken, Roskilde",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipPxfUeeBwOgkVTKa4xXVNeakkwAr-9fQOjh9SM4=s508-k-no"
+        },
+        {
+          "caption": "Folkeparken, Roskilde",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipPADCIR1FIkYO0oqAreBcOY3cvmZb7ED58Mw_-u=s451-k-no"
+        }
+      ],
+      "isFavourite": false,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.64512035,
+          12.08794553257179
+        ]
+      }
     },
     {
       "id": 5,
-      "name": "xyz museum",
+      "name": "Roskilde Jars",
       "location": "Roskilde",
-      "shortDescription": "Walking in the beautiful glacial landscape",
+      "shortDescription": "The Roskilde Jars stand on the square outside the railway station in Roskilde on the Danish island of Zealand",
+      "description": "The Roskilde Jars stand on the square outside the railway station in Roskilde on the Danish island of Zealand. The three huge jars are 5 m in height and together weigh about 24 tons. The jars are the work of the Danish abstract sculptor Peter Brandes. They were commissioned by Elsebeth Stryhn of Stryhns Leverpostej, a local meat paste company, and presented to the city in 1998 on the occasion of Roskilde's 1,000th anniversary. The jars stand in a shallow basin of water, in which they are reflected. The one closest to the station is inscribed with extracts from Henrik Norbrandt's poem Junker Kristoffer, a local hero buried in Roskilde Cathedral in 1363. The colourful glazed jars are reminiscent of Ancient Greek amphoras. They have accounted for several world records in pottery manufacture. Consisting of several hundred sections fired up to 1,300 °C at the Tommerup ceramics factory on the island of Funen, they were assembled by two men who stacked the sections on top of each other",
       "category": [
-        "museum"
+        "art-and-museum"
       ],
       "rating": 5,
       "tags": [
@@ -77,8 +177,29 @@
         "Popular",
         "Nearby"
       ],
-      "coverImage": "https://images.unsplash.com/photo-1601134917279-ef70a0a90f18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
-      "isFavourite": false
+      "coverImage": "https://lh5.googleusercontent.com/p/AF1QipP9w2S6NzO3PLttagr6SxUJ-P56XscBEB0p3o8r=w700-h400-k-no",
+      "images": [
+        {
+          "caption": "Roskilde Jars",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipOyYacM4XvaYsmnHR3kiNfOViTe8TgEDfZFyhwU=w203-h114-k-no"
+        },
+        {
+          "caption": "Roskilde Jars",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipPtCgw5t3FEJgNJtFQYCra6Te44nqlhFbYZp2Yd=s413-k-no"
+        },
+        {
+          "caption": "Roskilde Jars",
+          "url": "https://lh5.googleusercontent.com/p/AF1QipPW38pG4gaR57yeJxJxbLvqkjxRysCxHu8ZmwOP=s451-k-no"
+        }
+      ],
+      "isFavourite": false,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.63983581950499,
+          12.088614106178285
+        ]
+      }
     }
   ],
   "categories": [
