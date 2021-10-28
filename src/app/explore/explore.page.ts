@@ -29,11 +29,8 @@ export class ExplorePage implements AfterContentChecked, OnInit {
   ngAfterContentChecked(): void {
     if (this.swiper) {
       this.swiper.updateSwiper({
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 5,
-        navigation: true,
-        pagination: { clickable: true },
-        scrollbar: { draggable: true },
       });
     }
   }
