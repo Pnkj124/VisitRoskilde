@@ -48,25 +48,28 @@ export class MapPage implements AfterViewInit {
 
     L.marker([55.64149,12.08042])
       .addTo(this.map)
-      .bindPopup("Roskilde Museum");
+      .bindPopup("Roskilde Museum").openPopup();
 
     L.marker([55.641491,12.08042])
       .addTo(this.map)
-      .bindPopup("Roskilde Cathedral");
+      .bindPopup("Roskilde Cathedral").openPopup();
 
     L.marker([55.642414650000006,12.003508503149625])
       .addTo(this.map)
-      .bindPopup("Svogerslev Sø");
+      .bindPopup("Svogerslev Sø").openPopup();
 
     L.marker([55.64512035,12.08794553257179])
       .addTo(this.map)
-      .bindPopup("Folkeparken, Roskilde");
+      .bindPopup("Folkeparken, Roskilde").openPopup();
 
     L.marker([ 55.63983581950499,12.088614106178285])
       .addTo(this.map)
-      .bindPopup("Roskilde Jars");
+      .bindPopup("Roskilde Jars").openPopup();
 
-    mapTiles.redraw();
+    L.marker([55.65088515055106, 12.081484794616701])
+      .addTo(this.map)
+      .bindPopup("Viking Ship Museum").openPopup();
+
 
   }
 

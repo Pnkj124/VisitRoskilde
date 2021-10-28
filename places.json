@@ -196,6 +196,54 @@
           12.088614106178285
         ]
       }
+    },
+    {
+      "id": 6,
+      "name": "Viking Ship Museum",
+      "location": "Roskilde",
+      "shortDescription":"The Viking Ship Museum is now closed for rebuilding.",
+      "description": "The Viking Ship Museum is now closed for rebuilding. After 95 years in operation, the Viking Ship Museum closes its doors - and will re-emerge anew in five years as the Museum of the Viking Age.\n\nEver since the museum opened in 1926, the Viking Ship Museum has been a national symbol and gathering place for Norway's most important cultural heritage. For almost 100 years, the ship graves from Oseberg, Gokstad and Tune and Borre have captivated visitors from all over the world.\n\nIt is crucial to build a new museum to secure the cultural heritage for future generations. The new museum will ensure optimal conditions for the objects and at the same time give the public a unique encounter with the Viking Age.",
+      "category": [
+        "art-and-museum"
+      ],
+      "rating": 4,
+      "tags": [
+        "Popular"
+      ],
+      "coverImage": "https://jimswbckxyazqwvjqsdg.supabase.in/storage/v1/object/sign/roskilde-places/vikingmuseum/IMG_20210911_120141.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyb3NraWxkZS1wbGFjZXMvdmlraW5nbXVzZXVtL0lNR18yMDIxMDkxMV8xMjAxNDEuanBnIiwiaWF0IjoxNjM1NDUxNzIwLCJleHAiOjE5NTA4MTE3MjB9.g7awbkBicHF-6rXk1xe2ZvhAE8myyLUhLe90UzUBV9k",
+      "images": [
+        {
+          "caption": "Viking Ship Museum",
+          "url": "https://jimswbckxyazqwvjqsdg.supabase.in/storage/v1/object/sign/roskilde-places/vikingmuseum/DSC_0105.JPG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyb3NraWxkZS1wbGFjZXMvdmlraW5nbXVzZXVtL0RTQ18wMTA1LkpQRyIsImlhdCI6MTYzNTQ1MTcxOSwiZXhwIjoxOTUwODExNzE5fQ.5-FYmrWgtPu6TDRMMl7JMrJFcPzGVxz4jKaft-o7fvQ"
+        },
+        {
+          "caption": "Viking Ship Museum",
+          "url": "https://jimswbckxyazqwvjqsdg.supabase.in/storage/v1/object/sign/roskilde-places/vikingmuseum/2021-09-22.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyb3NraWxkZS1wbGFjZXMvdmlraW5nbXVzZXVtLzIwMjEtMDktMjIuanBnIiwiaWF0IjoxNjM1NDUxNzE2LCJleHAiOjE5NTA4MTE3MTZ9.MwKxsegz6Jak2RjzekjhvWGUOjU2PM5faPLe_aDCj3g"
+        },
+        {
+          "caption": "Viking Ship Museum",
+          "url": "https://jimswbckxyazqwvjqsdg.supabase.in/storage/v1/object/sign/roskilde-places/vikingmuseum/20191030_124818.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyb3NraWxkZS1wbGFjZXMvdmlraW5nbXVzZXVtLzIwMTkxMDMwXzEyNDgxOC5qcGciLCJpYXQiOjE2MzU0NTE3MTQsImV4cCI6MTk1MDgxMTcxNH0.lEQEw9Bg_j20H1HYC0n4GdbE1UDudqBB0ZzbArIFoP0"
+        },
+        {
+          "caption": "The Oseberg Viking Ship",
+          "url": "https://jimswbckxyazqwvjqsdg.supabase.in/storage/v1/object/sign/roskilde-places/vikingmuseum/oserberg-350.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyb3NraWxkZS1wbGFjZXMvdmlraW5nbXVzZXVtL29zZXJiZXJnLTM1MC5qcGciLCJpYXQiOjE2MzU0NTE5NTksImV4cCI6MTk1MDgxMTk1OX0.Y8mQD-SpxEN9XFRboxC9pCiv4S0t_Mx0cEObpMoDvec"
+        },
+        {
+          "caption": "The Gokstad Viking Ship",
+          "url": "https://jimswbckxyazqwvjqsdg.supabase.in/storage/v1/object/sign/roskilde-places/vikingmuseum/gokstad-350.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyb3NraWxkZS1wbGFjZXMvdmlraW5nbXVzZXVtL2dva3N0YWQtMzUwLmpwZyIsImlhdCI6MTYzNTQ1MTk0OSwiZXhwIjoxOTUwODExOTQ5fQ.GCopzU6pL0UL5-MXVLz9z7gM4lPtJmho5obUXbUPRZM"
+        },
+        {
+          "caption": "The Tune Viking Ship",
+          "url": "https://jimswbckxyazqwvjqsdg.supabase.in/storage/v1/object/sign/roskilde-places/vikingmuseum/tune-350.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyb3NraWxkZS1wbGFjZXMvdmlraW5nbXVzZXVtL3R1bmUtMzUwLmpwZyIsImlhdCI6MTYzNTQ1MTk2OSwiZXhwIjoxOTUwODExOTY5fQ.XH_jBWCs4yxT65lAWLvw49TBcanRn7c2RqPVFmIcMY4"
+        }
+      ],
+      "isFavourite": true,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.65088515055106, 12.081484794616701
+        ]
+      }
     }
   ],
   "categories": [
