@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Place} from "../Place";
 import {PlacesService} from "../api/places.service";
-import {NavController} from "@ionic/angular";
+import {AlertController, NavController} from "@ionic/angular";
 
 @Component({
   selector: 'app-favourite',
@@ -12,7 +12,7 @@ export class FavouritePage implements OnInit {
 
 favouritePlaces: Place[] = [];
 
-  constructor(private placeService: PlacesService,private navController: NavController) { }
+  constructor(private placeService: PlacesService,private navController: NavController,private alertController: AlertController) { }
 
   ngOnInit() {
     this.loadFavouritePlaces();
@@ -32,13 +32,35 @@ favouritePlaces: Place[] = [];
     }, 1000);
   }
 
-  removeFromFavourite(place: Place)
+  async removeFromFavourite(place: Place)
   {
-    place.isFavourite = false;
-    this.placeService.toggleFavourite(place).subscribe( () =>
-      this.favouritePlaces = this.favouritePlaces
-      .filter((filter => filter.isFavourite))
-      );
+    const alert = await this.alertController.create({
+      cssClass: 'my-custom-class',
+      header: 'Confirm!',
+      message: `Are you sure want to remove <b>${place.name}</b> from favourite?`,
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: (blah) => {
+            console.log('Confirm Cancel: blah');
+          }
+        }, {
+          text: 'Okay',
+          handler: () => {
+            console.log('Confirm Okay');
+
+            place.isFavourite = false;
+            this.placeService.toggleFavourite(place).subscribe( () =>
+              this.favouritePlaces = this.favouritePlaces
+                .filter((filter => filter.isFavourite))
+            );
+          }
+        }
+      ]});
+
+    await alert.present();
   }
 
   async loadDetail(place: Place)
