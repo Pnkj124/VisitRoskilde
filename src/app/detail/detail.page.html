@@ -8,6 +8,7 @@
         <ion-icon slot="icon-only" [name]="place.isFavourite ? 'heart' : 'heart-outline'" [class]="place.isFavourite ? 'favourite': ''"></ion-icon>
       </ion-button>
     </ion-buttons>
+    <ion-title>{{place.name}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -16,14 +17,16 @@
   <ion-grid>
     <ion-row class="detail_container">
       <ion-col>
-        <ion-text>
+        <ion-card-title>
           <h1>&nbsp;{{place.name}}</h1>
-          <ion-chip color="success">
+          <ion-chip color="success" *ngFor="let tag of place.tags">
             <ion-label>
-              <ion-icon name="location"></ion-icon>
-              {{place.location}}
+              {{tag}}
             </ion-label>
           </ion-chip>
+        </ion-card-title>
+        <ion-text>
+          <ngb-rating [max]="5" [(rate)]="place.rating" [readonly]="true"></ngb-rating>
         </ion-text>
       </ion-col>
     </ion-row>

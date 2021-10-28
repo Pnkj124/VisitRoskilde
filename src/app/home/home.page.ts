@@ -48,6 +48,5 @@ export class HomePage implements AfterContentChecked, OnInit{
 
   async loadDetail(place: Place){
     await this.navController.navigateForward(`detail/${place.id}`, { state: { place } })
-    console.log(place);
       }
 }

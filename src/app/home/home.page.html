@@ -30,16 +30,7 @@
       <ion-col>
         <swiper #swiper>
           <ng-template swiperSlide *ngFor="let place of places">
-            <ion-card (click)="loadDetail(place)">
-              <img [src]="place.coverImage" alt={{place.name}} class="card__image" />
-              <ion-card-header class="card__header">
-                <ion-card-title>{{place.name}}</ion-card-title>
-                <ion-card-subtitle>
-                  <ion-icon name="location-sharp" color="primary"></ion-icon> {{place.location}}
-                </ion-card-subtitle>
-                <ngb-rating [max]="5" [(rate)]="place.rating" [readonly]="true"></ngb-rating>
-              </ion-card-header>
-            </ion-card>
+          <app-card [place]="place" (loadDetailPage)="loadDetail(place)" ></app-card>
           </ng-template>
         </swiper>
       </ion-col>
@@ -56,16 +47,8 @@
     <ion-row class="top_places">
       <ion-col>
         <ion-list *ngFor="let place of topPlaces">
-          <ion-item (click)="loadDetail(place)">
-            <ion-thumbnail slot="start">
-              <img [src]="place.coverImage" alt="{{place.name}}" class="thumbnail_image">
-            </ion-thumbnail>
-            <ion-label>
-              <ion-title>{{place.name}}</ion-title>
-              <ion-title size="small">{{place.location}}</ion-title>
-              <p>{{place.shortDescription}}</p>
-            </ion-label>
-          </ion-item>
+          <app-small-card [place]="place" (click)="loadDetail(place)">
+          </app-small-card>
         </ion-list>
       </ion-col>
     </ion-row>

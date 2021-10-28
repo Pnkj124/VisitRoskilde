@@ -10,18 +10,7 @@
 <ion-content [fullscreen]="true">
   <section class="favourite__places">
     <ion-list *ngFor="let place of places">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img [src]="place.coverImage" alt="{{place.name}}" class="thumbnail_image">
-        </ion-thumbnail>
-        <ion-label>
-          <ion-title>{{place.name}}</ion-title>
-          <ion-chip color="success">
-            <ion-label> <ion-icon name="location"></ion-icon> {{place.location}}</ion-label>
-          </ion-chip>
-          <ion-title size="small">{{place.shortDescription}}</ion-title>
-        </ion-label>
-      </ion-item>
+      <app-small-card [place]="place" (onClick)="loadDetail(place)"></app-small-card>
     </ion-list>
   </section>
 </ion-content>

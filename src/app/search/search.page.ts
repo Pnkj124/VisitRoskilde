@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit} from '@angular/core';
 import {Place} from "../Place";
 import {PlacesService} from "../api/places.service";
 import {Category} from "../Category";
 import {ActivatedRoute, Router} from "@angular/router";
+import {NavController} from "@ionic/angular";
 
 @Component({
   selector: 'app-search',
@@ -15,7 +16,7 @@ places: Place[] = [];
 
 category: Category;
 
-  constructor(private placeService: PlacesService,private route: ActivatedRoute, private router: Router) {
+  constructor(private placeService: PlacesService,private route: ActivatedRoute, private router: Router,private navController: NavController) {
 
     this.route.queryParams.subscribe((_p) => {
       const navParams = this.router.getCurrentNavigation().extras.state
@@ -27,4 +28,7 @@ category: Category;
 
    }
 
+  async loadDetail(place: Place) {
+    await this.navController.navigateForward(`detail/${place.id}`, {state: {place}});
+  }
 }

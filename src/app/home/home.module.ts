@@ -10,6 +10,8 @@ import { HomePage } from './home.page';
 
 import {SwiperModule} from 'swiper/angular';
 import {NgbRatingModule} from "@ng-bootstrap/ng-bootstrap";
+import {CardComponent} from "../components/card/card.component";
+import {SmallCardComponent} from "../components/small-card/small-card.component";
 
 
 @NgModule({
@@ -21,6 +23,9 @@ import {NgbRatingModule} from "@ng-bootstrap/ng-bootstrap";
     SwiperModule,
     NgbRatingModule
   ],
-  declarations: [HomePage]
+  exports: [
+    SmallCardComponent
+  ],
+  declarations: [HomePage, CardComponent, SmallCardComponent]
 })
 export class HomePageModule {}

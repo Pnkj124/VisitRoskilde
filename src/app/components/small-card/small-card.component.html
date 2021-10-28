@@ -1,0 +1,10 @@
+<ion-item (click)="loadDetail(place)">
+  <ion-thumbnail slot="start">
+    <img [src]="place.coverImage" alt="{{place.name}}" class="thumbnail_image">
+  </ion-thumbnail>
+  <ion-label>
+    <ion-title>{{place.name}}</ion-title>
+    <ion-title size="small">{{place.location}}</ion-title>
+    <p>{{place.shortDescription}}</p>
+  </ion-label>
+</ion-item>
