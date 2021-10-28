@@ -31,7 +31,7 @@ export class MapPage implements AfterViewInit {
 
 
   private initMap(): void {
-    this.map = L.map('map').setView(this.roskildeCoordinate,13);
+    this.map = L.map('map').setView([55.673059164060724, 12.046508789062502],13);
 
     const mapTiles = L.tileLayer(`https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=${this.accessToken}`, {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -39,14 +39,34 @@ export class MapPage implements AfterViewInit {
       id: 'mapbox/streets-v11',
       tileSize: 512,
       zoomOffset: -1,
+      autoPan:false,
       accessToken: this.accessToken
     })
 
     mapTiles.addTo(this.map);
 
-    L.marker(this.roskildeCoordinate)
+
+    L.marker([55.64149,12.08042])
       .addTo(this.map)
-      .bindPopup("Roskilde");
+      .bindPopup("Roskilde Museum");
+
+    L.marker([55.641491,12.08042])
+      .addTo(this.map)
+      .bindPopup("Roskilde Cathedral");
+
+    L.marker([55.642414650000006,12.003508503149625])
+      .addTo(this.map)
+      .bindPopup("Svogerslev Sø");
+
+    L.marker([55.64512035,12.08794553257179])
+      .addTo(this.map)
+      .bindPopup("Folkeparken, Roskilde");
+
+    L.marker([ 55.63983581950499,12.088614106178285])
+      .addTo(this.map)
+      .bindPopup("Roskilde Jars");
+
+    mapTiles.redraw();
 
   }
 
@@ -55,7 +75,7 @@ export class MapPage implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.initMap();
-    this.markerService.makeMarkers(this.map);
+    //this.markerService.makeMarkers(this.map);
   }
 
 }
