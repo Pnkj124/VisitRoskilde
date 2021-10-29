@@ -150,7 +150,7 @@
           "url": "https://jimswbckxyazqwvjqsdg.supabase.in/storage/v1/object/sign/roskilde-places/folkeparken/2019-05-16.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyb3NraWxkZS1wbGFjZXMvZm9sa2VwYXJrZW4vMjAxOS0wNS0xNi5qcGciLCJpYXQiOjE2MzU0NDE5NDYsImV4cCI6MTk1MDgwMTk0Nn0.5vFZiGSX6oLuOmgsrw0n7UZkeOROHcz5zFEjGD8s7pA"
         }
       ],
-      "isFavourite": true,
+      "isFavourite": false,
       "geometry": {
         "type": "Point",
         "coordinates": [
