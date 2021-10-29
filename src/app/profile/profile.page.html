@@ -9,7 +9,7 @@
     <ion-row class="profile__container">
       <ion-col size="8">
         <ion-text>
-          <h1>{{user}}</h1>
+          <h1>&nbsp;{{user}}</h1>
           <ion-chip color="success">
             <ion-label>
               <ion-icon name="ribbon"></ion-icon>
@@ -20,7 +20,7 @@
       </ion-col>
       <ion-col size="4" class="profile__image__container">
         <ion-avatar>
-          <img src="./assets/profile/user.jpg" alt="{{user}}" class="profile__image">
+          <img [src]="userProfileImage" alt="{{user}}" class="profile__image">
         </ion-avatar>
       </ion-col>
     </ion-row>
